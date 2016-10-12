@@ -1,0 +1,67 @@
+Goal:
+    Get a taste for how collaboration works
+
+Top level concepts:
+    Branch, Remote, Merge
+
+Merge: Depends on (Commit, Branch, Remote)
+    Key ideas:
+        - Take two branches and merge them into a single branch
+        - Recall that in a given project you can refer to branches on any
+          remotes (any similar projects you're watching) 
+        - When merging two branches (two versions of the project) its possible
+          that git will require your help to pick out the right set of
+          changes.
+
+Remote: Depends on (Repository, Github)
+    Key ideas:
+    - A remote is a local copy of another version of the project
+        - For example, origin is a remote which identifies the repository at https://github.com/user/repo.git
+    - *This topic is sort of nuanced, and best explained by an example of two
+      people working on the same project together
+
+
+Branch: Depends on (Commit, Repository, Remote)
+    Key ideas:
+    - A branch is a chain of commits
+        - Acheived by each commit knowing its parent (see Commit)
+    - By default a new git project begins with a branch called 'master'
+    - The name comes from the behavior of trees, a single trunk can produce
+      branches and each branch can further split into branches.
+    - Each branch belongs to a repository
+        - In a given project because you can refer to remotes (other versions
+          of the project), you can also refer to branches in those remotes
+    - *Show how two commits can have the same parent, and how this creates
+      different versions of the project
+    - *The expert model is that a branch is just a name for a commit, really a
+      commit contains all the branch history, because each commit contains a
+      reference to its ancestor. Understanding the significance of commits is
+      important to a strong mental model.
+
+Commit:
+    Key ideas:
+    - Every commit has 3 parts:
+        - unique name
+        - a parent commit (*this is what links commits into a branch)
+        - a set of changes
+    - Basic building block of a project (most importantly its history)
+    - *The expert model is that a commit represents a version of the project.
+      Because technically every commit includes every ancestor (via its link
+      to its parent and so on).
+
+Repository: Depends on (Cloning a repository)
+    Key ideas:
+        - Git jargon for a particular git project
+        - When you clone a repository, you're making a copy of a repository.
+          You now have a local repository stored on your computer.
+
+Cloning a repository: Depends on (Github)
+    Key ideas:
+        - A git command to download a git project
+            - For example: git clone 'https://github.com/user/project'
+Github:
+    Key ideas:
+        - Github is a web site where people can share git projects
+            - There are other similar sites like: bitbucket, sourceforge
+        - Github is not git
+
