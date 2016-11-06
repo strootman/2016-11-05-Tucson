@@ -1,0 +1,223 @@
+  119  source .bashrc
+  120  echo test
+  121  clear
+  122  ls
+  123  clear
+  124  echo 'hello'
+  125  clear
+  126  pwd
+  127  ls
+  128  cd Desktop/
+  129  ls
+  130  pwd
+  131  ls
+  132  mkdir test
+  133  ls
+  134  cd test/
+  135  pwd
+  136  cd /c/Users/marneedearman/Desktop/
+  137  ls
+  138  ls test/
+  139  ls /c/Users/marneedearman/Desktop/
+  140  ls /c/Users/marneedearman/
+  141  ls /c/Users/marneedearman/
+  142  ls -l
+  143  cd ~
+  144  ls
+  145  cd Desktop/
+  146  ls
+  147  mkdir My favorite ice cream flavors
+  148  mkdir 'My favorite ice cream flavors'
+  149  mkdir My_favorite_ice_cream_flavors
+  150  ls --help
+  151  ls -l
+  152  ls -lt
+  153  ls -ltr
+  154  cd My_favorite_ice_cream_flavors/
+  155  touch My_favorite_icecreamfalvors.txt
+  156  touch My_favorite_icecreamfalvors
+  157  ls
+  158  rm My_favorite_icecreamfalvors
+  159  ls
+  160  ls -l
+  161  cat My_favorite_icecreamfalvors.txt 
+  162  wc My_favorite_icecreamfalvors.txt 
+  163  wc -l My_favorite_icecreamfalvors.txt 
+  164  head -3 My_favorite_icecreamfalvors.txt 
+  165  head -1 My_favorite_icecreamfalvors.txt 
+  166  head -2 My_favorite_icecreamfalvors.txt 
+  167  tail -2 My_favorite_icecreamfalvors.txt 
+  168  grep 'a' My_favorite_icecreamfalvors.txt 
+  169  grep 'te' My_favorite_icecreamfalvors.txt 
+  170  grep 'te' My_favorite_icecreamfalvors.txt | wc 
+  171  head -3 My_favorite_icecreamfalvors.txt | grep 'a' | wc
+  172  head -3 My_favorite_icecreamfalvors.txt | grep 'a' 
+  173  head -3 My_favorite_icecreamfalvors.txt 
+  174  sort My_favorite_icecreamfalvors.txt 
+  175  ls 
+  176  cd ..
+  177  cd My_favorite_ice_cream_flavors/
+  178  cd ../../
+  179  cd Desktop/My_favorite_ice_cream_flavors/
+  180  cd ../../
+  181  cd ..
+  182  cd ..
+  183  cd Users/
+  184  cd marneedearman/
+  185  cd Desktop/
+  186  cd My_favorite_ice_cream_flavors/
+  187  cd ..
+  188  cd My_favorite_ice_cream_flavors/
+  189  ls
+  190  ls
+  191  sort My_favorite_icecreamfalvors.txt  >> sortedflavors.txt
+  192  ls
+  193  less sortedflavors.txt 
+  194  less sortedflavors.txt 
+  195  head -2 My_favorite_icecreamfalvors.txt > my_first_two.txt
+  196  ls
+  197  cat my_first_two.txt 
+  198  head -4 My_favorite_icecreamfalvors.txt | tail -2 >> my_first_two.txt 
+  199  cat my_first_two.txt 
+  200  head -4 My_favorite_icecreamfalvors.txt | tail -2 > my_first_two.txt 
+  201  cat my_first_two.txt 
+  202  cd ..
+  203  cd ..
+  204  pwd
+  205  ls
+  206  ls | less
+  207  ls | less
+  208  git
+  209  cd ~
+  210  cd Desktop/
+  211  mkdir gapminder
+  212  ls
+  213  cd gapminder/
+  214  ls
+  215  git clone https://github.com/MarneeDear/softwarecarpentry.git
+  216  ls
+  217  cd softwarecarpentry/
+  218  ls
+  219  cd data/
+  220  ls
+  221  cd gapminderExcer/
+  222  ls
+  223  ls
+  224  ls | less
+  225  wc
+  226  ls | wc
+  227  ls | less
+  228  ls | sort -r
+  229  cat Afghanistan.cc.txt 
+  230  ls 
+  231  cat Zimbabwe.cc.txt Zambia.cc.txt 
+  232  cat Zimbabwe.cc.txt Zambia.cc.txt > Zambia_and_Zimbabwe.txt
+  233  ls -lrt
+  234  ls -ltr
+  235  cat Zimbabwe.cc.txt Zambia.cc.txt Yemen_Rep.cc.txt > three_concat_files.txt
+  236  ls -ltr
+  237  cat three_concat_files.txt 
+  238  cat *
+  239  ls -ltr
+  240  rm three_concat_files.txt Zambia_and_Zimbabwe.txt 
+  241  cat * > all_concatenated.txt
+  242  git status
+  243  git add all_concatenated.txt 
+  244  git status
+  245  git commit -m 'added new file'
+  246  git status
+  247  git log
+  248  cat all_concatenated.txt 
+  249  less all_concatenated.txt 
+  250  grep "notes" *
+  251  grep -i "notes" *
+  252  rm Notes.txt 
+  253  rm all_concatenated.txt 
+  254  ls -lrt
+  255  cat * > all_concatenated.txt
+  256  less all_concatenated.txt 
+  257  less all_concatenated.txt 
+  258  grep 'Asia' all_concatenated.txt 
+  259  grep 'Asia' all_concatenated.txt > Asia_data.txt
+  260  ls -lrt
+  261  less Asia_data.txt 
+  262  sort -k2 Asia_data.txt 
+  263  sort -k2 Asia_data.txt > Asia_data_sorted.txt
+  264  nano Asia_data_sorted.txt 
+  265  less Asia_data_sorted.txt 
+  266  nano Asia_data_sorted.txt 
+  267  ls
+  268  clear
+  269  ls -lrth
+  270  rm all_concatenated.txt Asia_data.txt Asia_data_sorted.txt 
+  271  cat * all_concatenated.txt
+  272  cat * > all_concatenated.txt
+  273  grep 'Asia' all_concatenated.txt 
+  274  grep 'Asia' all_concatenated.txt > Asia_data.txt
+  275  sort -k2 Asia_data.txt 
+  276  sort -k2 Asia_data.txt > Asia_sorted1.txt
+  277  head Asia_sorted1.txt 
+  278  less Asia_sorted1.txt 
+  279  sort -t '\t' -k2 Asia_data.txt | less
+  280  sort -t "\t" -k2 Asia_data.txt | less
+  281  sort -t "/t" -k2 Asia_data.txt | less
+  282  sort -t '/t' -k2 Asia_data.txt | less
+  283  sort -t'/t' -k2 Asia_data.txt | less
+  284  sort -t"/t" -k2 Asia_data.txt | less
+  285  sort -t$"/t" -k2 Asia_data.txt | less
+  286  sort -t$'/t' -k2 Asia_data.txt | less
+  287  sort -t$'\t' -k2 Asia_data.txt | less
+  288  sort -t$'\t' -k2 Asia_data.txt > Asia_sortedByYear.txt
+  289  clear
+  290  ls
+  291  ls -lrt
+  292  git status
+  293  git status
+  294  git add Notes.txt 
+  295  git add all_concatenated.txt 
+  296  git status
+  297  git add Asia_data.txt 
+  298  git status
+  299  git commit -m 'asia data processing'
+  300  git status
+  301  git log
+  302  clear
+  303  history
+  304  clear
+  305  ls -lrt
+  306  less Asia_data.txt 
+  307  less Asia_data.txt 
+  308  sort -t$'\t' -k2 Asia_data.txt > Asia_data_sorted.txt
+  309  less Asia_data_sorted.txt 
+  310  clear
+  311  less Asia_data_sorted.txt 
+  312  cut -f1,2,5,6 Asia_data_sorted.txt 
+  313  cut -f1,2,5,6 Asia_data_sorted.txt > Asia_data_sorted_colum1256.txt
+  314  ls-lrt
+  315  ls -lrt
+  316  ls -lrt
+  317  rm all_concatenated.txt Asia_*
+  318  ls -lrt
+  319  ./my_first_script.sh
+  320  .my_first_script.sh
+  321  my_first_script.sh
+  322  ls -lrt
+  323  ./my_firt_script.sh
+  324  ./my_firt_script.sh
+  325  ls -lrt
+  326  rm all_concatenated.txt Asia_data*
+  327  ls -lrt
+  328  ./my_firt_script.sh
+  329  ls -lrt
+  330  chmod +x my_firt_script.sh 
+  331  ls -lrt
+  332  chmod w+x my_firt_script.sh 
+  333  chmod a+x my_firt_script.sh 
+  334  ls -lrt
+  335  chmod 777 my_firt_script.sh 
+  336  ls -lrt
+  337  rm my_firt_script.sh all_concatenated.txt Asia_data*
+  338  ls -lrt
+  339  cat * | grep 'Asia' 
+  340  cat * | grep 'Asia' | sort -t$'\t' -k2 
+  341  cat * | grep 'Asia' | sort -t$'\t' -k2 | cut -f1,2,5,6
